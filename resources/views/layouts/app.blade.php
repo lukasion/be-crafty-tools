@@ -12,9 +12,14 @@
 
     <meta name="robots" content="index, follow">
     <meta name="author" content="Łukasz Mikulec">
-    <meta name="keywords"
-          content="web development, web design, tools, image color picker, favicon generator, image converter, useful tools online, web tools">
 
+    @hasSection('keywords')
+        <meta name="keywords" content="@yield('keywords')">
+    @else
+        <meta name="keywords"
+              content="web development, web design, tools, image color picker, favicon generator, image converter, useful tools online, web tools">
+    @endif
+    
     @hasSection('description')
         <meta name="description" content="@yield('description')">
     @else

@@ -23,7 +23,12 @@
                 <li><a class="{{ request()->routeIs('favicon-generator') ? 'text-red-500' : '' }}"
                        href="{{ route('favicon-generator') }}">Favicon
                         Generator</a></li>
-                <li><a href="#">Image Converter</a></li>
+                <li>
+                    <a class="{{ request()->routeIs('sitemap-generator') ? 'text-red-500' : '' }}"
+                       href="{{ route('sitemap-generator') }}">
+                        Sitemap Generator
+                    </a>
+                </li>
             </ul>
         </div>
     </div>

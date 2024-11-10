@@ -106,7 +106,8 @@
             </svg>
         </a>
 
-        <div class="flex items-start gap-4 rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] transition duration-300 hover:text-black/70 focus:outline-none lg:pb-10">
+        <a href="{{ route('sitemap-generator') }}"
+           class="flex items-start gap-4 rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] transition duration-300 hover:text-black/70 focus:outline-none lg:pb-10">
             <div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-[#ff2049]/10 sm:size-16">
                 <svg class="size-5 sm:size-6" xmlns="http://www.w3.org/2000/svg" fill="none"
                      viewBox="0 0 24 24">
@@ -120,15 +121,17 @@
 
             <div class="pt-3 sm:pt-5">
                 <h2 class="text-xl font-semibold text-black">
-                    Image Converter
+                    Sitemap Generator
                 </h2>
 
                 <p class="mt-4 text-sm/relaxed">
-                    Image Converter is a tool that allows you to convert images to different formats. You
-                    can upload an image and select the format you want to convert it to. The tool will
-                    convert the image and provide you with a download link.
+                    Sitemap Generator is a tool that allows you to generate a sitemap for your website. You
+                    can upload an image and the tool will generate a sitemap in XML format.
+                    The sitemap can be used to improve the SEO of your website. You can download the
+                    generated sitemap as an XML file. The sitemap will help search engines index your website
+                    more effectively.
                 </p>
             </div>
-        </div>
+        </a>
     </div>
 @endsection

@@ -23,7 +23,7 @@ class FaviconGeneratorController extends Controller
 
             return response($res)
                 ->header('Content-Type', 'application/zip')
-                ->header('Content-Disposition', 'attachment; filename="favicons.zip"');
+                ->header('Content-Dispositi\on', 'attachment; filename="favicons.zip"');
         }
 
         return view('pages.favicon-generator');
